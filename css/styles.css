@@ -877,6 +877,12 @@ body {
     .hero-title {
         margin: 0 auto 36px;
     }
+
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office-tablet.jpg");
+    }
     
     .header-logo {
         margin-right: 120px;
@@ -993,6 +999,11 @@ body {
     .hero {
         max-width: 1440px;
         margin: 0 auto;
+    }
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office-desktop.jpg");
     }
 
     .header-logo {
