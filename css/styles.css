@@ -469,13 +469,11 @@ body {
 
 .footer-left {
     max-width: 264px;
-    text-align: center;
-    margin: 0 auto;
 }
 
 .footer-social-title,
 .footer-subscribe-title {
-    text-align: center;
+    text-align: left;
 }
 .footer-logo {
     display: inline-block;
@@ -485,7 +483,6 @@ body {
 .footer-right {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
 }
 
 .footer-subscribe-form {
@@ -830,15 +827,18 @@ body {
     .footer-subscribe-input {
         width: 264px;
     }
-        .page-footer .container {
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: baseline;
-            gap: 24px;
-        }
+          .page-footer .container {
+              display: flex;
+              align-items: baseline;
+              flex-wrap: nowrap;
+              gap: 120px;
+          }
 
     .footer-left {
         margin-right: 24px;
+    }
+    .footer-right {
+        max-width: 264px;
     }
 
     .nav-list {
@@ -1020,19 +1020,26 @@ body {
     .page-footer .container {
         flex-direction: row;
         align-items: baseline;
+        gap: 120px;
     }
 
     .page-footer {
         padding: 100px 0;
     }
 
-    .footer-left {
-        margin-right: 120px;
+    .footer-right {
+      display: flex;
+      flex-direction: column;
     }
 
-    .footer-right {
-        margin-right: 80px;
-    }
+        .footer-left {
+            text-align: left;
+        }
+    
+        .footer-social-title,
+        .footer-subscribe-title {
+            text-align: left;
+        }
 
     
     .contacts-list {
