@@ -827,20 +827,13 @@ body {
     .footer-subscribe-input {
         width: 264px;
     }
-          .page-footer .container {
-              display: flex;
-              align-items: baseline;
-              flex-wrap: nowrap;
-              gap: 120px;
-          }
-
-    .footer-left {
-        margin-right: 24px;
-    }
-    .footer-right {
-        max-width: 264px;
-    }
-
+   
+        .page-footer .container {
+            display: flex;
+            align-items: baseline;
+            gap: 120px;
+        }
+    
     .nav-list {
         display: flex;
         gap: 40px;
