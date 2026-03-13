@@ -469,6 +469,13 @@ body {
 
 .footer-left {
     max-width: 264px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-social-title,
+.footer-subscribe-title {
+    text-align: center;
 }
 .footer-logo {
     display: inline-block;
@@ -478,6 +485,7 @@ body {
 .footer-right {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .footer-subscribe-form {
@@ -775,12 +783,33 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding: 72px 16px 40px;
+}
+
+.mobile-menu-nav {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-nav li {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    color: #2e2f42;
 }
 
 .mobile-menu-contacts {
     margin-top: auto;
+    margin-bottom: 48px;
 }
 
+.mobile-menu-social {
+    display: flex;
+    gap: 40px;
+}
 
 /* ================= TABLET ================= */
 @media screen and (min-width:768px) {
@@ -805,7 +834,12 @@ body {
             flex-direction: row;
             flex-wrap: wrap;
             align-items: baseline;
+            gap: 24px;
         }
+
+    .footer-left {
+        margin-right: 24px;
+    }
 
     .nav-list {
         display: flex;
@@ -891,14 +925,7 @@ body {
         url("../images/people-office-tablet.jpg");
     }
            
-    @media screen and (min-width:768px) and (min-resolution:192dpi) {
-    .hero {
-            background-image:
-            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url("../images/people-office-tablet@2x.jpg");
-          }
-    }
-    
+ 
     .header-logo {
         margin-right: 120px;
     }
@@ -907,6 +934,14 @@ body {
         padding: 72px 24px 24px;
     }
 }
+
+   @media screen and (min-width:768px) and (min-resolution:192dpi) {
+       .hero {
+        background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/people-office-tablet@2x.jpg");
+       }
+   }
 
 /* ================= DESKTOP ================= */
 
@@ -1022,14 +1057,6 @@ body {
             url("../images/people-office-desktop.jpg");
     }
 
-      @media screen and (min-width:1158px) and (min-resolution:192dpi) {
-    .hero {
-            background-image:
-                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url("../images/people-office-desktop@2x.jpg");
-            }
-    }
-
     .header-logo {
         margin-right: 76px;
     }
@@ -1038,6 +1065,13 @@ body {
         padding: 120px 0;
     }
 }
+          @media screen and (min-width:1158px) and (min-resolution:192dpi) {
+              .hero {
+                  background-image:
+                      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                      url("../images/people-office-desktop@2x.jpg");
+              }
+          }
 
 
   
