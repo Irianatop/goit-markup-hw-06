@@ -462,9 +462,8 @@ body {
 .page-footer .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 72px;
-    text-align: center;
 }
 
 .footer-left {
@@ -473,7 +472,7 @@ body {
 
 .footer-social-title,
 .footer-subscribe-title {
-    text-align: center;
+    text-align: left;
 }
 .footer-logo {
     display: inline-block;
@@ -777,14 +776,17 @@ body {
     }
 }
 .mobile-menu-container {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 72px 16px 40px;
 }
 
 .mobile-menu-nav {
-    margin-bottom: 40px;
+    margin-bottom: auto;
 }
 
 .mobile-menu-nav li {
@@ -806,6 +808,22 @@ body {
 .mobile-menu-social-list {
     display: flex;
     gap: 40px;
+}
+.mobile-menu-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    border: 1px solid #e7e9fc;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ================= TABLET ================= */
@@ -834,9 +852,8 @@ body {
             align-items: baseline;
             gap: 24px;
         }
-                .footer-right {
-                    width: 100%;
-                }
+                
+               
     
     .nav-list {
         display: flex;
@@ -1041,14 +1058,16 @@ body {
     
     .contacts-list {
         flex-direction: row;
+        align-items:center;
         gap: 40px;
     }
     
-    .contacts-link {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
+        .contacts-link {
+            padding: 24px 0;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        }
 
     .hero {
         padding: 188px 0;
