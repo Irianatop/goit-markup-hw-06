@@ -464,6 +464,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 72px;
+    text-align: center;
 }
 
 .footer-left {
@@ -472,7 +473,7 @@ body {
 
 .footer-social-title,
 .footer-subscribe-title {
-    text-align: left;
+    text-align: center;
 }
 .footer-logo {
     display: inline-block;
@@ -802,7 +803,7 @@ body {
     margin-bottom: 48px;
 }
 
-.mobile-menu-social {
+.mobile-menu-social-list {
     display: flex;
     gap: 40px;
 }
@@ -829,9 +830,13 @@ body {
    
         .page-footer .container {
             display: flex;
+            flex-wrap: wrap;
             align-items: baseline;
             gap: 24px;
         }
+                .footer-right {
+                    width: 100%;
+                }
     
     .nav-list {
         display: flex;
