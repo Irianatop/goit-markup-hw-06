@@ -263,12 +263,17 @@ body {
 .features-item-title {
     font-size: 36px;
     font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px;
 }
 
 .features-text {
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-align: left;
 }
 
@@ -462,7 +467,7 @@ body {
 .page-footer .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 72px;
 }
 
@@ -472,7 +477,7 @@ body {
 
 .footer-social-title,
 .footer-subscribe-title {
-    text-align: left;
+    text-align: center;
 }
 .footer-logo {
     display: inline-block;
@@ -777,8 +782,7 @@ body {
 }
 .mobile-menu-container {
     position: relative;
-    padding-top: 72px;
-    padding-bottom: 40px;
+    padding: 72px 16px 40px;
 
     display: flex;
     flex-direction: column;
@@ -850,7 +854,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
-            gap: 24px;
+            gap: 72px 24px;
         }
                 
                
@@ -960,6 +964,12 @@ body {
 /* ================= DESKTOP ================= */
 
 @media screen and (min-width:1158px) {
+
+    .footer-subscribe {
+        margin-left: auto;
+    }
+    
+        
 
     .container {
         max-width: 1158px;
