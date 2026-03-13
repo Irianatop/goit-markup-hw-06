@@ -409,7 +409,6 @@ body {
 
 .footer-text {
     color: #f4f4fd;
-    margin-top: 16px;
 }
 
 .footer-social-list {
@@ -831,7 +830,7 @@ body {
         .page-footer .container {
             display: flex;
             align-items: baseline;
-            gap: 120px;
+            gap: 24px;
         }
     
     .nav-list {
