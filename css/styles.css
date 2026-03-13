@@ -801,6 +801,11 @@ body {
     .footer-subscribe-input {
         width: 264px;
     }
+        .page-footer .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
 
     .nav-list {
         display: flex;
@@ -859,6 +864,7 @@ body {
     .contacts-link {
         font-size: 12px;
         line-height: 1.17;
+        letter-spacing: 0.04em;
     }
 
     .modal {
@@ -878,10 +884,19 @@ body {
         margin: 0 auto 36px;
     }
 
+           
     .hero {
         background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/people-office-tablet.jpg");
+    }
+           
+    @media screen and (min-width:768px) and (min-resolution:192dpi) {
+    .hero {
+            background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url("../images/people-office-tablet.jpg");
+            url("../images/people-office-tablet@2x.jpg");
+          }
     }
     
     .header-logo {
@@ -892,6 +907,7 @@ body {
         padding: 72px 24px 24px;
     }
 }
+
 /* ================= DESKTOP ================= */
 
 @media screen and (min-width:1158px) {
@@ -908,6 +924,7 @@ body {
     .hero-title {
         font-size: 56px;
         max-width: 496px;
+        margin: 0 auto 48px;
     }
 
     .features-icon {
@@ -982,9 +999,7 @@ body {
         margin-right: 80px;
     }
 
-    .hero {
-        padding: 188px 0;
-    }
+    
     .contacts-list {
         flex-direction: row;
         gap: 40px;
@@ -997,6 +1012,7 @@ body {
     }
 
     .hero {
+        padding: 188px 0;
         max-width: 1440px;
         margin: 0 auto;
     }
@@ -1004,6 +1020,14 @@ body {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/people-office-desktop.jpg");
+    }
+
+      @media screen and (min-width:1158px) and (min-resolution:192dpi) {
+    .hero {
+            background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url("../images/people-office-desktop@2x.jpg");
+            }
     }
 
     .header-logo {
