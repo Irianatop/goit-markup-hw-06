@@ -235,7 +235,7 @@ body {
     line-height: 1.11;
     color: #ffffff;
     max-width: 216px;
-    margin: 0 auto 48px;
+    margin: 0 auto 72px;
 }
 
 .hero-button {
@@ -279,7 +279,7 @@ body {
 }
 
 .features-text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -538,7 +538,7 @@ body {
 
 
 .footer-subscribe-input {
-    width: 100%;
+    width: 288px;
     height: 40px;
     padding-left: 16px;
     border: 1px solid #ffffff;
@@ -557,7 +557,7 @@ body {
 }
 
 .footer-subscribe-btn {
-    min-width: 165px;
+    width: 165px;
     height: 40px;
     background-color: #4d5ae5;
     border: none;
@@ -569,6 +569,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 16px;
+    margin: 0 auto;
 }
 .footer-subscribe-btn svg {
     fill: #ffffff;
@@ -959,6 +960,8 @@ body {
             flex-wrap: wrap;
             align-items: flex-start;
             gap: 72px 24px;
+            flex-direction: row;
+            padding-left: 108px ;
     }
     .footer-social-title,
     .footer-subscribe-title {
@@ -1075,7 +1078,7 @@ body {
     
     .container {
         max-width: 1158px;
-        padding: 0 24px;
+        padding: 0 15px;
         margin: auto;
     }
 
@@ -1147,7 +1150,8 @@ body {
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
-        gap: 120px;
+        gap: 0;
+        padding-left: 15px ;
     }
       
 
@@ -1162,6 +1166,7 @@ body {
 
    .footer-left {
     text-align: left;
+    margin-right: 120px ;
    }
     
     .footer-social-title,
