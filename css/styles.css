@@ -41,6 +41,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #fff;
+    line-height: 1.5;
 }
 
 /* ================= COMMON ================= */
@@ -203,6 +204,9 @@ body {
     background-color: #2e2f42;
     padding: 72px 0;
     text-align: center;
+
+    max-width: 320px;
+    margin: 0 auto;
     
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -212,6 +216,9 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+   
+
 
 @media screen and (min-resolution: 192dpi) {
     .hero {
@@ -227,7 +234,7 @@ body {
     line-height: 1.11;
     color: #ffffff;
     max-width: 216px;
-    margin: 0 auto 72px;
+    margin: 0 auto 48px;
 }
 
 .hero-button {
@@ -352,6 +359,21 @@ body {
     background-color: #404bbf;
 }
 
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+.team-position {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 /* ================= PORTFOLIO ================= */
 
 .portfolio-list {
@@ -400,6 +422,21 @@ body {
     border: 1px solid #e7e9fc;
     border-top: none;
 }
+
+.portfolio-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 /* ================= FOOTER ================= */
 
 .page-footer {
@@ -408,7 +445,11 @@ body {
 }
 
 .footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
 
 .footer-social-list {
@@ -422,6 +463,7 @@ body {
 
 .footer-subscribe-title {
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-social-title,
@@ -468,6 +510,7 @@ body {
 
 .footer-left {
     max-width: 264px;
+    text-align: center;
 }
 
 .footer-social-title,
@@ -484,12 +527,9 @@ body {
     flex-direction: column;
 }
 
-.footer-subscribe-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+
 .footer-subscribe-input {
+    width: 100%;
     height: 40px;
     padding-left: 16px;
     border: 1px solid #ffffff;
@@ -499,6 +539,12 @@ body {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+}
+.footer-subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
 }
 
 .footer-subscribe-btn {
@@ -515,6 +561,13 @@ body {
     justify-content: center;
     gap: 16px;
 }
+.footer-subscribe-btn svg {
+    fill: #ffffff;
+}
+.footer-logo .logo-part {
+    color: #f4f4fd;
+}
+
 
 /* ================= MODAL ================= */
 
@@ -854,6 +907,9 @@ body {
     line-height: 1.2;
     color: #434455;
 }
+.footer-left {
+    text-align: center;
+}
 
 /* ================= TABLET ================= */
 @media screen and (min-width:768px) {
@@ -874,19 +930,18 @@ body {
     .footer-subscribe-input {
         width: 264px;
     }
+    .footer-subscribe {
+        width: 453px;
+    }
+   
    
     .page-footer .container {
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
-            gap: 72px;
+            gap: 72px 24px;
     }
-    .footer-subscribe {
-        width: 100%;
-    }
-                
-               
-    
+  
     .nav-list {
         display: flex;
         gap: 40px;
@@ -929,7 +984,7 @@ body {
     .portfolio-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 72px 24px;
+        gap: 48px 24px;
     }
 
     .portfolio-item {
@@ -951,18 +1006,19 @@ body {
         width: 408px;
     }
 
-    .hero {
-        padding: 112px 0;
-    }
+    
 
     .hero-title {
         font-size: 56px;
         max-width: 496px;
         margin: 0 auto 36px;
     }
+  
 
            
     .hero {
+        padding: 112px 0;
+        max-width: 768px;
         background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url("../images/people-office-tablet.jpg");
@@ -996,7 +1052,8 @@ body {
     
     .container {
         max-width: 1158px;
-        padding: 0 15px;
+        padding: 0 24px;
+        margin: auto;
     }
 
     .team .container {
@@ -1026,7 +1083,7 @@ body {
     .features-item-title {
         font-size: 20px;
         font-weight: 500;
-        text-align: left;
+        line-height: 1.2;
     }
     
     .features-text {
@@ -1061,10 +1118,12 @@ body {
     }
 
     .page-footer .container {
-        flex-direction: row;
+        display: flex;
+        flex-wrap: nowrap;
         align-items: baseline;
         gap: 120px;
     }
+      
 
     .page-footer {
         padding: 100px 0;
@@ -1075,9 +1134,10 @@ body {
       flex-direction: column;
     }
 
-    .footer-left {
-        text-align: left;
-    }
+   .footer-left {
+       margin-right: 120px;
+       text-align: left;
+   }
     
     .footer-social-title,
     .footer-subscribe-title {
@@ -1091,17 +1151,18 @@ body {
         gap: 40px;
     }
     
-        .contacts-link {
+    .contacts-link {
             padding: 24px 0;
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
-        }
+    }
 
     .hero {
         padding: 188px 0;
         max-width: 1440px;
         margin: 0 auto;
+        background-size: cover;
     }
     .hero {
         background-image:
